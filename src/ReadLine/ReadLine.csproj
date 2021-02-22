@@ -1,20 +1,27 @@
 ﻿<Project Sdk="Microsoft.NET.Sdk">
 
-  <PropertyGroup>
-    <AssemblyTitle>ReadLine</AssemblyTitle>
-    <AssemblyDescription>A GNU-Readline like library for .NET/.NET Core</AssemblyDescription>
-    <AssemblyVersion>2.0.1</AssemblyVersion>
-    <Authors>Toni Solarin-Sodara</Authors>
-    <TargetFramework>netstandard2.0</TargetFramework>
-    <DebugType>portable</DebugType>
-    <AssemblyName>ReadLine</AssemblyName>
-    <PackageId>ReadLine</PackageId>
-    <PackageVersion>$(AssemblyVersion)</PackageVersion>
-    <PackageTags>readline;gnu;console;shell;cui</PackageTags>
-    <PackageProjectUrl>https://github.com/tonerdo/readline</PackageProjectUrl>
-    <PackageLicenseUrl>https://github.com/tonerdo/readline/blob/master/LICENSE</PackageLicenseUrl>
-    <RepositoryType>git</RepositoryType>
-    <RepositoryUrl>https://github.com/tonerdo/readline</RepositoryUrl>
-  </PropertyGroup>
+	<PropertyGroup>
+		<AssemblyName>Phoesion.ReadLine</AssemblyName>
+		<AssemblyTitle>Phoesion.ReadLine</AssemblyTitle>
+		<AssemblyDescription>A GNU-Readline like library for .NET/.NET Core</AssemblyDescription>
+		<AssemblyVersion>2.0.1</AssemblyVersion>
+		<Authors>Toni Solarin-Sodara</Authors>
+		<TargetFramework>netstandard2.0</TargetFramework>
+		<DebugType>portable</DebugType>
+
+		<IsPackable>true</IsPackable>
+		<PackageVersion>$(AssemblyVersion)</PackageVersion>
+		<PackageTags>readline;gnu;console;shell;cui</PackageTags>
+		<PackageProjectUrl>https://github.com/tonerdo/readline</PackageProjectUrl>
+		<PackageLicenseExpression>MIT</PackageLicenseExpression>
+		<RepositoryType>git</RepositoryType>
+		<RepositoryUrl>https://github.com/tonerdo/readline</RepositoryUrl>
+	</PropertyGroup>
+
+	<PropertyGroup>
+		<SignAssembly>true</SignAssembly>
+		<AssemblyOriginatorKeyFile>P:\Phoesion\Certificates\sn_private.snk</AssemblyOriginatorKeyFile>
+		<DelaySign>false</DelaySign>
+	</PropertyGroup>
 
 </Project>
